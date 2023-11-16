@@ -1,3 +1,1 @@
-<app-face-snap [faceSnap]="zhaoYun"></app-face-snap>
-<app-face-snap [faceSnap]="guanYu"></app-face-snap>
-<app-face-snap [faceSnap]="zhangFei"></app-face-snap>
+<app-face-snap *ngFor=" let warriors of faceSnaps" [faceSnap]="warriors"></app-face-snap>

@@ -21,16 +21,16 @@ export class FaceSnapComponent implements OnInit {
   @Input() faceSnap!: FaceSnap;
 
   ngOnInit() {
-      this.buttonText = 'Oh Snap!';  
+      this.buttonText = 'Favorite?!';  
   }
 
   onSnap() {
-    if (this.buttonText === 'Oh Snap!') {
+    if (this.buttonText === 'Favorite?!') {
       this.faceSnap.snaps++;
-      this.buttonText = 'Oops, unSnap!';
+      this.buttonText = 'Yep! I like this character!';
     } else {
       this.faceSnap.snaps--;
-      this.buttonText = 'Oh Snap!';
+      this.buttonText = 'Favorite?!';
     }
   }  
 }
